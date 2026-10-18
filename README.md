@@ -9,3 +9,7 @@ Aprendendo a trabalhar com reposítórios remotos
 ```bash
 git --version
 ``` 
+- Como listar os atquivos na minha pasta
+``` bash
+ls
+```
