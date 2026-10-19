@@ -1,0 +1,23 @@
+name: Teste da soma
+
+# Executa quando você envia commits para qualquer branch
+on: push
+
+permissions:
+  contents: read
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obter os arquivos do repositório
+        uses: actions/checkout@v7
+
+      - name: Preparar o Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Executar o teste
+        run: python -m unittest -v test_soma
