@@ -20,4 +20,4 @@ jobs:
           python-version: "3.13"
 
       - name: Executar o teste
-        run: python -m unittest -v test_soma
+        run: python -m unittest -v teste_soma
